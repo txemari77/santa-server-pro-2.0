@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+#minigame-container {
+    max-width: 800px;
+    margin: 20px auto;
+    border: 5px solid #c00;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.factory-background {
+    /* Esta es la imagen de fondo del escenario */
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+}
+/* Estilos de las opciones */
+.game-options {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end; /* Para alinear en la parte inferior si las imágenes tienen diferente altura */
+    margin-top: -150px; /* Ajusta la posición de los objetos sobre la imagen de fondo */
+    position: relative;
+    z-index: 10;
+}
+.option {
+    cursor: pointer;
+    border: 3px solid transparent;
+    transition: border-color 0.3s;
+}
+.option:hover {
+    border-color: gold; /* Resaltar al pasar el ratón */
+}
+.option img {
+    width: 120px; /* Ajusta el tamaño de los regalos y el carbón */
+    height: auto;
+}
+/* Mensajes de resultado */
+#result-message {
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+}
+.success {
+    color: green;
+    background-color: #e6ffe6;
+}
+.error {
+    color: red;
+    background-color: #ffe6e6;
+}
+/* Estilo del botón */
+.map-button {
+    background-color: #8B0000;
+    color: white;
+    border: 2px solid #FFD700;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: none; /* Oculto inicialmente, se muestra al ganar */
+}
